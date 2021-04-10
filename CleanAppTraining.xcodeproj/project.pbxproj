@@ -10,7 +10,9 @@
 		CDD933FA2621447F000AD8C0 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933F92621447F000AD8C0 /* AddAccount.swift */; };
 		CDD933FD262145B7000AD8C0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933FC262145B7000AD8C0 /* AccountModel.swift */; };
 		CDD9340D26214613000AD8C0 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
-		CDD9341226214613000AD8C0 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9341126214613000AD8C0 /* DataTests.swift */; };
+		CDD9341226214613000AD8C0 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9341126214613000AD8C0 /* RemoteAddAccountTests.swift */; };
+		CDD9342226214659000AD8C0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; };
+		CDD9342326214659000AD8C0 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +23,28 @@
 			remoteGlobalIDString = CDD9340326214613000AD8C0;
 			remoteInfo = Data;
 		};
+		CDD9342426214659000AD8C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD933EE26214437000AD8C0;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDD9342626214659000AD8C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDD9342326214659000AD8C0 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CDD933EF26214437000AD8C0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,7 +54,7 @@
 		CDD9340426214613000AD8C0 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD9340726214613000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD9340C26214613000AD8C0 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDD9341126214613000AD8C0 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		CDD9341126214613000AD8C0 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		CDD9341326214613000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD9342226214659000AD8C0 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 				CDD9340526214613000AD8C0 /* Data */,
 				CDD9341026214613000AD8C0 /* DataTests */,
 				CDD933DD26213ED1000AD8C0 /* Products */,
+				CDD9342126214659000AD8C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +127,17 @@
 		CDD9341026214613000AD8C0 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDD9341126214613000AD8C0 /* DataTests.swift */,
+				CDD9341126214613000AD8C0 /* RemoteAddAccountTests.swift */,
 				CDD9341326214613000AD8C0 /* Info.plist */,
 			);
 			path = DataTests;
+			sourceTree = "<group>";
+		};
+		CDD9342126214659000AD8C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +186,12 @@
 				CDD9340026214613000AD8C0 /* Sources */,
 				CDD9340126214613000AD8C0 /* Frameworks */,
 				CDD9340226214613000AD8C0 /* Resources */,
+				CDD9342626214659000AD8C0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDD9342526214659000AD8C0 /* PBXTargetDependency */,
 			);
 			name = Data;
 			productName = Data;
@@ -268,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD9341226214613000AD8C0 /* DataTests.swift in Sources */,
+				CDD9341226214613000AD8C0 /* RemoteAddAccountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +313,11 @@
 			isa = PBXTargetDependency;
 			target = CDD9340326214613000AD8C0 /* Data */;
 			targetProxy = CDD9340E26214613000AD8C0 /* PBXContainerItemProxy */;
+		};
+		CDD9342526214659000AD8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDD933EE26214437000AD8C0 /* Domain */;
+			targetProxy = CDD9342426214659000AD8C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
