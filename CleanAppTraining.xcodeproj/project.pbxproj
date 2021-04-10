@@ -9,13 +9,30 @@
 /* Begin PBXBuildFile section */
 		CDD933FA2621447F000AD8C0 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933F92621447F000AD8C0 /* AddAccount.swift */; };
 		CDD933FD262145B7000AD8C0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933FC262145B7000AD8C0 /* AccountModel.swift */; };
+		CDD9340D26214613000AD8C0 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
+		CDD9341226214613000AD8C0 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9341126214613000AD8C0 /* DataTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDD9340E26214613000AD8C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD9340326214613000AD8C0;
+			remoteInfo = Data;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CDD933EF26214437000AD8C0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD933F226214437000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD933F92621447F000AD8C0 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
 		CDD933FC262145B7000AD8C0 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		CDD9340426214613000AD8C0 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD9340726214613000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD9340C26214613000AD8C0 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD9341126214613000AD8C0 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		CDD9341326214613000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDD9340126214613000AD8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDD9340926214613000AD8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD9340D26214613000AD8C0 /* Data.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				CDD933F026214437000AD8C0 /* Domain */,
+				CDD9340526214613000AD8C0 /* Data */,
+				CDD9341026214613000AD8C0 /* DataTests */,
 				CDD933DD26213ED1000AD8C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				CDD933EF26214437000AD8C0 /* Domain.framework */,
+				CDD9340426214613000AD8C0 /* Data.framework */,
+				CDD9340C26214613000AD8C0 /* DataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,17 +84,41 @@
 		CDD933F026214437000AD8C0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				CDD933F226214437000AD8C0 /* Info.plist */,
 				CDD933F92621447F000AD8C0 /* AddAccount.swift */,
 				CDD933FC262145B7000AD8C0 /* AccountModel.swift */,
+				CDD933F226214437000AD8C0 /* Info.plist */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		CDD9340526214613000AD8C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CDD9340726214613000AD8C0 /* Info.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CDD9341026214613000AD8C0 /* DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDD9341126214613000AD8C0 /* DataTests.swift */,
+				CDD9341326214613000AD8C0 /* Info.plist */,
+			);
+			path = DataTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		CDD933EA26214437000AD8C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDD933FF26214613000AD8C0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,17 +146,60 @@
 			productReference = CDD933EF26214437000AD8C0 /* Domain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CDD9340326214613000AD8C0 /* Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDD9341526214613000AD8C0 /* Build configuration list for PBXNativeTarget "Data" */;
+			buildPhases = (
+				CDD933FF26214613000AD8C0 /* Headers */,
+				CDD9340026214613000AD8C0 /* Sources */,
+				CDD9340126214613000AD8C0 /* Frameworks */,
+				CDD9340226214613000AD8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Data;
+			productName = Data;
+			productReference = CDD9340426214613000AD8C0 /* Data.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDD9340B26214613000AD8C0 /* DataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDD9341826214613000AD8C0 /* Build configuration list for PBXNativeTarget "DataTests" */;
+			buildPhases = (
+				CDD9340826214613000AD8C0 /* Sources */,
+				CDD9340926214613000AD8C0 /* Frameworks */,
+				CDD9340A26214613000AD8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDD9340F26214613000AD8C0 /* PBXTargetDependency */,
+			);
+			name = DataTests;
+			productName = DataTests;
+			productReference = CDD9340C26214613000AD8C0 /* DataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CDD933D326213ED1000AD8C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					CDD933EE26214437000AD8C0 = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
+					};
+					CDD9340326214613000AD8C0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					CDD9340B26214613000AD8C0 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -114,12 +217,28 @@
 			projectRoot = "";
 			targets = (
 				CDD933EE26214437000AD8C0 /* Domain */,
+				CDD9340326214613000AD8C0 /* Data */,
+				CDD9340B26214613000AD8C0 /* DataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CDD933ED26214437000AD8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDD9340226214613000AD8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDD9340A26214613000AD8C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +257,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDD9340026214613000AD8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDD9340826214613000AD8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD9341226214613000AD8C0 /* DataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDD9340F26214613000AD8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDD9340326214613000AD8C0 /* Data */;
+			targetProxy = CDD9340E26214613000AD8C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CDD933E226213ED1000AD8C0 /* Debug */ = {
@@ -318,6 +460,98 @@
 			};
 			name = Release;
 		};
+		CDD9341626214613000AD8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CDD9341726214613000AD8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CDD9341926214613000AD8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				INFOPLIST_FILE = DataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.DataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CDD9341A26214613000AD8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				INFOPLIST_FILE = DataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.DataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +569,24 @@
 			buildConfigurations = (
 				CDD933F526214437000AD8C0 /* Debug */,
 				CDD933F626214437000AD8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDD9341526214613000AD8C0 /* Build configuration list for PBXNativeTarget "Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD9341626214613000AD8C0 /* Debug */,
+				CDD9341726214613000AD8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDD9341826214613000AD8C0 /* Build configuration list for PBXNativeTarget "DataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD9341926214613000AD8C0 /* Debug */,
+				CDD9341A26214613000AD8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
