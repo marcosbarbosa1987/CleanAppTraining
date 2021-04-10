@@ -13,6 +13,7 @@
 		CDD9341226214613000AD8C0 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9341126214613000AD8C0 /* RemoteAddAccountTests.swift */; };
 		CDD9342226214659000AD8C0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; };
 		CDD9342326214659000AD8C0 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDD9342C26215456000AD8C0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9342B26215456000AD8C0 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CDD9340C26214613000AD8C0 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD9341126214613000AD8C0 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		CDD9341326214613000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD9342B26215456000AD8C0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				CDD933F92621447F000AD8C0 /* AddAccount.swift */,
 				CDD933FC262145B7000AD8C0 /* AccountModel.swift */,
+				CDD9342B26215456000AD8C0 /* Model.swift */,
 				CDD933F226214437000AD8C0 /* Info.plist */,
 			);
 			path = Domain;
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD9342C26215456000AD8C0 /* Model.swift in Sources */,
 				CDD933FA2621447F000AD8C0 /* AddAccount.swift in Sources */,
 				CDD933FD262145B7000AD8C0 /* AccountModel.swift in Sources */,
 			);
