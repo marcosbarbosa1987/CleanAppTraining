@@ -25,16 +25,34 @@ class RemoteAddAccountTests: XCTestCase {
         XCTAssertEqual(httpClientSpy.data, addAccountModel.toData())
     }
     
-    func test_add_should_complete_with_error_if_client_fails() {
+    func test_add_should_complete_with_error_if_client_completes_with_error() {
         let (sut, httpClientSpy) = makeSUT()
         let exp = expectation(description: "waiting")
-        sut.add(addAccountModel: makeAddAccountModel()) { error in
-            XCTAssertEqual(error, .unexpected)
+        sut.add(addAccountModel: makeAddAccountModel()) { result in
+            
+            switch result {
+            case .success:
+                XCTFail("Expected error receive \(result) instead")
+            case .failure(let error):
+                XCTAssertEqual(error, .unexpected)
+            }
+            
             exp.fulfill()
         }
         httpClientSpy.completeWithError(.noConnectivity)
         wait(for: [exp], timeout: 1)
     }
+    
+//    func test_add_should_complete_with_account_if_client_completes_with_data() {
+//        let (sut, httpClientSpy) = makeSUT()
+//        let exp = expectation(description: "waiting")
+//        sut.add(addAccountModel: makeAddAccountModel()) { error in
+//            XCTAssertEqual(error, .unexpected)
+//            exp.fulfill()
+//        }
+//        httpClientSpy.completeWithError(.noConnectivity)
+//        wait(for: [exp], timeout: 1)
+//    }
 }
 
 // MARK: - Helpers
@@ -54,16 +72,16 @@ extension RemoteAddAccountTests {
     class HttpClientSpy: HttpPostClient {
         var urls: [URL] = [URL]()
         var data: Data?
-        var completion: ((HttpError) -> Void)?
+        var completion: ((Result<Data?, HttpError>) -> Void)?
         
-        func post(to url: URL, with data: Data?, completion: @escaping(HttpError) -> Void) {
+        func post(to url: URL, with data: Data?, completion: @escaping(Result<Data?, HttpError>) -> Void) {
             self.urls.append(url)
             self.data = data
             self.completion = completion
         }
         
         func completeWithError(_ error: HttpError) {
-            completion?(error)
+            completion?(.failure(error))
         }
     }
 }
