@@ -30,8 +30,6 @@ public final class RemoteAddAccount: AddAccount {
             case .failure:
                 completion(.failure(.unexpected))
             }
-            
-            completion(.failure(.unexpected))
         }
     }
 }
