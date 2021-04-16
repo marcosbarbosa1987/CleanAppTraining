@@ -148,8 +148,8 @@
 		CDD9340526214613000AD8C0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				CD12072526268C03009056FB /* Helpers */,
 				CDD9343F26215586000AD8C0 /* UseCases */,
+				CD12072526268C03009056FB /* Helpers */,
 				CDD934422621558D000AD8C0 /* Http */,
 				CDD9340726214613000AD8C0 /* Info.plist */,
 			);
