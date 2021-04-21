@@ -106,22 +106,3 @@ extension AlamofireAdapterTests {
         wait(for: [exp], timeout: 1)
     }
 }
-
-/*
- 
- data response error
- 
- valid
- ok ok  x
- x  x   ok -> implemented
- 
- invalid
- 
- ok ok ok
- ok x ok
- ok x x
- x ok ok
- x ok x
- x x x
- 
- */
