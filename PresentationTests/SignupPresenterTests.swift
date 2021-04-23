@@ -82,6 +82,8 @@ class SignupPresenterTests: XCTestCase {
     }
 }
 
+// MARK: - Helpers
+
 extension SignupPresenterTests {
     
     func makeSUT() -> (sut: SignUpPresenter, alertViewSpy: AlertViewSpy) {

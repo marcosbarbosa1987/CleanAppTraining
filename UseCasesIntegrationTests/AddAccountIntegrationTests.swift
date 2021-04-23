@@ -12,7 +12,6 @@ import Domain
 
 class AddAccountIntegrationTests: XCTestCase {
 
-   
     func test_add_account() {
         let url = URL(string: "https://fordevs.herokuapp.com/api/signup")!
         let alamofireAdapter = AlamofireAdapter()
@@ -32,7 +31,6 @@ class AddAccountIntegrationTests: XCTestCase {
             }
             exp.fulfill()
         }
-        
         wait(for: [exp], timeout: 15)
     }
 }
