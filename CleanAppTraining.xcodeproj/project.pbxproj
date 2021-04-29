@@ -37,6 +37,10 @@
 		CDFAB0D02630E356007F1D39 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
 		CDFAB0F42630ED10007F1D39 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAB0EB2630ED10007F1D39 /* Presentation.framework */; };
 		CDFAB0F92630ED10007F1D39 /* SignupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFAB0F82630ED10007F1D39 /* SignupPresenterTests.swift */; };
+		CDFAB115263A50AC007F1D39 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFAB114263A50AC007F1D39 /* SignUpPresenter.swift */; };
+		CDFAB11C263A50DF007F1D39 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; };
+		CDFAB11D263A50DF007F1D39 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDFAB128263A514B007F1D39 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFAB127263A514B007F1D39 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,13 @@
 			remoteGlobalIDString = CDFAB0EA2630ED10007F1D39;
 			remoteInfo = Presentation;
 		};
+		CDFAB11E263A50DF007F1D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD933EE26214437000AD8C0;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,6 +128,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				CDED140626292AD100FD7290 /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFAB120263A50DF007F1D39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDFAB11D263A50DF007F1D39 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +180,8 @@
 		CDFAB0F32630ED10007F1D39 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFAB0F82630ED10007F1D39 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 		CDFAB0FA2630ED10007F1D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFAB114263A50AC007F1D39 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		CDFAB127263A514B007F1D39 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFAB11C263A50DF007F1D39 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +446,8 @@
 		CDFAB0EC2630ED10007F1D39 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CDFAB12E263A5166007F1D39 /* Presenters */,
+				CDFAB126263A5140007F1D39 /* Views */,
 				CDFAB0EE2630ED10007F1D39 /* Info.plist */,
 			);
 			path = Presentation;
@@ -429,10 +456,34 @@
 		CDFAB0F72630ED10007F1D39 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDFAB0F82630ED10007F1D39 /* SignupPresenterTests.swift */,
+				CDFAB139263A5255007F1D39 /* Presenters */,
 				CDFAB0FA2630ED10007F1D39 /* Info.plist */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		CDFAB126263A5140007F1D39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAB127263A514B007F1D39 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDFAB12E263A5166007F1D39 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAB114263A50AC007F1D39 /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CDFAB139263A5255007F1D39 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAB0F82630ED10007F1D39 /* SignupPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -594,10 +645,12 @@
 				CDFAB0E72630ED10007F1D39 /* Sources */,
 				CDFAB0E82630ED10007F1D39 /* Frameworks */,
 				CDFAB0E92630ED10007F1D39 /* Resources */,
+				CDFAB120263A50DF007F1D39 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDFAB11F263A50DF007F1D39 /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -654,6 +707,7 @@
 					};
 					CDFAB0EA2630ED10007F1D39 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					CDFAB0F22630ED10007F1D39 = {
 						CreatedOnToolsVersion = 12.2;
@@ -814,6 +868,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFAB115263A50AC007F1D39 /* SignUpPresenter.swift in Sources */,
+				CDFAB128263A514B007F1D39 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +923,11 @@
 			isa = PBXTargetDependency;
 			target = CDFAB0EA2630ED10007F1D39 /* Presentation */;
 			targetProxy = CDFAB0F52630ED10007F1D39 /* PBXContainerItemProxy */;
+		};
+		CDFAB11F263A50DF007F1D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDD933EE26214437000AD8C0 /* Domain */;
+			targetProxy = CDFAB11E263A50DF007F1D39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1285,6 +1346,7 @@
 		CDFAB0FD2630ED10007F1D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1304,6 +1366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1311,6 +1374,7 @@
 		CDFAB0FE2630ED10007F1D39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1337,6 +1401,7 @@
 		CDFAB1002630ED10007F1D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L682628XMT;
@@ -1357,6 +1422,7 @@
 		CDFAB1012630ED10007F1D39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L682628XMT;
