@@ -20,6 +20,8 @@ public class SignUpPresenter {
     public func signUp(viewModel: SignUpViewModel) {
         if let message = validate(viewModel: viewModel) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
+        } else {
+            // MARK: - Calls addAccount
         }
     }
     
