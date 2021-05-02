@@ -12,6 +12,9 @@
 		CD12072726268C0F009056FB /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12072626268C0F009056FB /* ExtensionHelpers.swift */; };
 		CD54BAA2262D0092000F1B43 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54BAA1262D0092000F1B43 /* AlamofireAdapter.swift */; };
 		CD54BAB5262D017B000F1B43 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54BAB4262D017B000F1B43 /* UrlProtocolStub.swift */; };
+		CDB08581263E4FDB008106A1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
+		CDB08582263E4FDB008106A1 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDB0858A263E52E6008106A1 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13D926291F9D00FD7290 /* AccountModelFactory.swift */; };
 		CDD933FA2621447F000AD8C0 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933F92621447F000AD8C0 /* AddAccount.swift */; };
 		CDD933FD262145B7000AD8C0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933FC262145B7000AD8C0 /* AccountModel.swift */; };
 		CDD9340D26214613000AD8C0 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
@@ -45,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CDB08583263E4FDB008106A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD9340326214613000AD8C0;
+			remoteInfo = Data;
+		};
 		CDD9340E26214613000AD8C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
@@ -139,6 +149,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CDB08582263E4FDB008106A1 /* Data.framework in Embed Frameworks */,
 				CDFAB11D263A50DF007F1D39 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -239,6 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB08581263E4FDB008106A1 /* Data.framework in Frameworks */,
 				CDFAB11C263A50DF007F1D39 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +674,7 @@
 			);
 			dependencies = (
 				CDFAB11F263A50DF007F1D39 /* PBXTargetDependency */,
+				CDB08584263E4FDB008106A1 /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -889,6 +902,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB0858A263E52E6008106A1 /* AccountModelFactory.swift in Sources */,
 				CDFAB0F92630ED10007F1D39 /* SignupPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,6 +910,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CDB08584263E4FDB008106A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDD9340326214613000AD8C0 /* Data */;
+			targetProxy = CDB08583263E4FDB008106A1 /* PBXContainerItemProxy */;
+		};
 		CDD9340F26214613000AD8C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CDD9340326214613000AD8C0 /* Data */;
