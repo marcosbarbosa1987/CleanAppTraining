@@ -28,6 +28,8 @@
 		CDD095962640F3A8009DC7E0 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095952640F3A8009DC7E0 /* SignUpViewControllerTests.swift */; };
 		CDD095BB2640F49C009DC7E0 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAB0EB2630ED10007F1D39 /* Presentation.framework */; };
 		CDD095BC2640F49D009DC7E0 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAB0EB2630ED10007F1D39 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDD095DF2640F753009DC7E0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095DE2640F753009DC7E0 /* SignUpViewController.swift */; };
+		CDD0960B2640F89B009DC7E0 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD0960A2640F89B009DC7E0 /* SignUp.storyboard */; };
 		CDD933FA2621447F000AD8C0 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933F92621447F000AD8C0 /* AddAccount.swift */; };
 		CDD933FD262145B7000AD8C0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933FC262145B7000AD8C0 /* AccountModel.swift */; };
 		CDD9340D26214613000AD8C0 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
@@ -214,6 +216,8 @@
 		CDD095902640F3A8009DC7E0 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD095952640F3A8009DC7E0 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		CDD095972640F3A8009DC7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD095DE2640F753009DC7E0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CDD0960A2640F89B009DC7E0 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		CDD933EF26214437000AD8C0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD933F226214437000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD933F92621447F000AD8C0 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -421,6 +425,8 @@
 			isa = PBXGroup;
 			children = (
 				CDD0958B2640F3A8009DC7E0 /* Info.plist */,
+				CDD095DE2640F753009DC7E0 /* SignUpViewController.swift */,
+				CDD0960A2640F89B009DC7E0 /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -899,6 +905,7 @@
 				TargetAttributes = {
 					CDD095872640F3A8009DC7E0 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					CDD0958F2640F3A8009DC7E0 = {
 						CreatedOnToolsVersion = 12.2;
@@ -968,6 +975,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD0960B2640F89B009DC7E0 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,6 +1049,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD095DF2640F753009DC7E0 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,6 +1220,7 @@
 		CDD0959A2640F3A8009DC7E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1231,6 +1241,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1238,6 +1249,7 @@
 		CDD0959B2640F3A8009DC7E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1265,6 +1277,7 @@
 		CDD0959D2640F3A8009DC7E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L682628XMT;
@@ -1286,6 +1299,7 @@
 		CDD0959E2640F3A8009DC7E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L682628XMT;
