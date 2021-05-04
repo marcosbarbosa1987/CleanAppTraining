@@ -17,6 +17,7 @@
 		CDB0858A263E52E6008106A1 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13D926291F9D00FD7290 /* AccountModelFactory.swift */; };
 		CDB08590263E5972008106A1 /* TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13C826291D5E00FD7290 /* TestExtension.swift */; };
 		CDB08597263E5B85008106A1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB08596263E5B85008106A1 /* LoadingView.swift */; };
+		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD933FA2621447F000AD8C0 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933F92621447F000AD8C0 /* AddAccount.swift */; };
 		CDD933FD262145B7000AD8C0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933FC262145B7000AD8C0 /* AccountModel.swift */; };
 		CDD9340D26214613000AD8C0 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
@@ -166,6 +167,7 @@
 		CD54BAA1262D0092000F1B43 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		CD54BAB4262D017B000F1B43 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		CDB08596263E5B85008106A1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD933EF26214437000AD8C0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD933F226214437000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD933F92621447F000AD8C0 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -300,6 +302,15 @@
 				CD54BAB4262D017B000F1B43 /* UrlProtocolStub.swift */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		CDD095292640EF67009DC7E0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAB114263A50AC007F1D39 /* SignUpPresenter.swift */,
+				CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		CDD933D226213ED1000AD8C0 = {
@@ -492,7 +503,7 @@
 		CDFAB12E263A5166007F1D39 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				CDFAB114263A50AC007F1D39 /* SignUpPresenter.swift */,
+				CDD095292640EF67009DC7E0 /* SignUp */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -898,6 +909,7 @@
 			files = (
 				CDFAB115263A50AC007F1D39 /* SignUpPresenter.swift in Sources */,
 				CDB08597263E5B85008106A1 /* LoadingView.swift in Sources */,
+				CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */,
 				CDFAB128263A514B007F1D39 /* AlertView.swift in Sources */,
 				CDFAB146263A545C007F1D39 /* EmailValidator.swift in Sources */,
 			);
