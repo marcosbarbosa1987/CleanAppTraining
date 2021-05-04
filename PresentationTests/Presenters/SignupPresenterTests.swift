@@ -113,11 +113,25 @@ class SignupPresenterTests: XCTestCase {
         let sut = makeSUT(alertView: alertViewSpy, addAccount: addAccountSpy)
         let exp = expectation(description: "waiting")
         alertViewSpy.observe { [weak self] viewModel in
-            XCTAssertEqual(viewModel, self?.makeErrorAlertViewModel(fieldName: "Algo inesperado aconteceu, tente novamente em alguns instantes."))
+            XCTAssertEqual(viewModel, self?.makeErrorAlertViewModel(message: "Algo inesperado aconteceu, tente novamente em alguns instantes."))
             exp.fulfill()
         }
         sut.signUp(viewModel: makeSignUpViewModel())
         addAccountSpy.completeWithError(.unexpected)
+        wait(for: [exp], timeout: 1)
+    }
+    
+    func test_signUp_should_show_success_message_if_addAccount_succeds() {
+        let alertViewSpy = AlertViewSpy()
+        let addAccountSpy = AddAccountSpy()
+        let sut = makeSUT(alertView: alertViewSpy, addAccount: addAccountSpy)
+        let exp = expectation(description: "waiting")
+        alertViewSpy.observe { [weak self] viewModel in
+            XCTAssertEqual(viewModel, self?.makeSuccessAlertViewModel(message: "Conta criada com sucesso."))
+            exp.fulfill()
+        }
+        sut.signUp(viewModel: makeSignUpViewModel())
+        addAccountSpy.completeWithAccount(makeAccountModel())
         wait(for: [exp], timeout: 1)
     }
     
@@ -170,8 +184,12 @@ extension SignupPresenterTests {
         return AlertViewModel(title: "Falha na validação", message: "O campo \(fieldName) é inválido")
     }
     
-    func makeErrorAlertViewModel(fieldName: String) -> AlertViewModel {
-        return AlertViewModel(title: "Erro", message: fieldName)
+    func makeErrorAlertViewModel(message: String) -> AlertViewModel {
+        return AlertViewModel(title: "Erro", message: message)
+    }
+    
+    func makeSuccessAlertViewModel(message: String) -> AlertViewModel {
+        return AlertViewModel(title: "Sucesso", message: message)
     }
     
     class AlertViewSpy: AlertView {
@@ -212,6 +230,10 @@ extension SignupPresenterTests {
         
         func completeWithError(_ error: DomainError) {
             completion?(.failure(error))
+        }
+        
+        func completeWithAccount(_ account: AccountModel) {
+            completion?(.success(account))
         }
     }
     
