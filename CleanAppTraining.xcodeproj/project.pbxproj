@@ -19,6 +19,11 @@
 		CDB08597263E5B85008106A1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB08596263E5B85008106A1 /* LoadingView.swift */; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
+		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
+		CDD095572640F12A009DC7E0 /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095562640F12A009DC7E0 /* EmailValidatorSpy.swift */; };
+		CDD095642640F159009DC7E0 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095632640F159009DC7E0 /* AddAccountSpy.swift */; };
+		CDD095702640F196009DC7E0 /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0956F2640F196009DC7E0 /* LoadingViewSpy.swift */; };
+		CDD095782640F20E009DC7E0 /* TestsFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095772640F20E009DC7E0 /* TestsFactories.swift */; };
 		CDD933FA2621447F000AD8C0 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933F92621447F000AD8C0 /* AddAccount.swift */; };
 		CDD933FD262145B7000AD8C0 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD933FC262145B7000AD8C0 /* AccountModel.swift */; };
 		CDD9340D26214613000AD8C0 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
@@ -170,6 +175,11 @@
 		CDB08596263E5B85008106A1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
+		CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
+		CDD095562640F12A009DC7E0 /* EmailValidatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorSpy.swift; sourceTree = "<group>"; };
+		CDD095632640F159009DC7E0 /* AddAccountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountSpy.swift; sourceTree = "<group>"; };
+		CDD0956F2640F196009DC7E0 /* LoadingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewSpy.swift; sourceTree = "<group>"; };
+		CDD095772640F20E009DC7E0 /* TestsFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsFactories.swift; sourceTree = "<group>"; };
 		CDD933EF26214437000AD8C0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD933F226214437000AD8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD933F92621447F000AD8C0 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -314,6 +324,47 @@
 				CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CDD0953D2640F08E009DC7E0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAB0F82630ED10007F1D39 /* SignupPresenterTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CDD095482640F0DA009DC7E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */,
+				CDD0956F2640F196009DC7E0 /* LoadingViewSpy.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDD095552640F121009DC7E0 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				CDD095562640F12A009DC7E0 /* EmailValidatorSpy.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		CDD095622640F14B009DC7E0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				CDD095632640F159009DC7E0 /* AddAccountSpy.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CDD095762640F1FF009DC7E0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CDD095772640F20E009DC7E0 /* TestsFactories.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		CDD933D226213ED1000AD8C0 = {
@@ -488,6 +539,10 @@
 		CDFAB0F72630ED10007F1D39 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDD095762640F1FF009DC7E0 /* Helpers */,
+				CDD095622640F14B009DC7E0 /* UseCases */,
+				CDD095552640F121009DC7E0 /* Validators */,
+				CDD095482640F0DA009DC7E0 /* Views */,
 				CDFAB139263A5255007F1D39 /* Presenters */,
 				CDFAB0FA2630ED10007F1D39 /* Info.plist */,
 			);
@@ -514,7 +569,7 @@
 		CDFAB139263A5255007F1D39 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				CDFAB0F82630ED10007F1D39 /* SignupPresenterTests.swift */,
+				CDD0953D2640F08E009DC7E0 /* SignUp */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -923,7 +978,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD095702640F196009DC7E0 /* LoadingViewSpy.swift in Sources */,
+				CDD095642640F159009DC7E0 /* AddAccountSpy.swift in Sources */,
+				CDD095782640F20E009DC7E0 /* TestsFactories.swift in Sources */,
+				CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */,
 				CDB0858A263E52E6008106A1 /* AccountModelFactory.swift in Sources */,
+				CDD095572640F12A009DC7E0 /* EmailValidatorSpy.swift in Sources */,
 				CDB08590263E5972008106A1 /* TestExtension.swift in Sources */,
 				CDFAB0F92630ED10007F1D39 /* SignupPresenterTests.swift in Sources */,
 			);
