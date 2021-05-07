@@ -25,7 +25,7 @@ final class SignUpViewController: UIViewController {
 // MARK: - LoadingView
 
 extension SignUpViewController: LoadingView {
-    
+
     func display(viewModel: LoadingViewModel) {
         if viewModel.isLoading {
             loadingIndicator?.startAnimating()
