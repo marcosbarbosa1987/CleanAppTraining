@@ -34,3 +34,12 @@ extension SignUpViewController: LoadingView {
         }
     }
 }
+
+// MARK: - AlertView
+
+extension SignUpViewController: AlertView {
+   
+    func showMessage(viewModel: AlertViewModel) {
+        
+    }
+}
