@@ -29,14 +29,17 @@ class SignUpViewControllerTests: XCTestCase {
     }
     
     func test_save_button_calls_signup_on_tap() {
-        var callsCount = 0
-        let signUpSpy: ((SignUpViewModel) -> Void) = { _ in
-            callsCount += 1
-        }
+        var signUpViewModel: SignUpViewModel?
+        let signUpSpy: ((SignUpViewModel) -> Void) = { signUpViewModel = $0 }
         let sut = makeSUT(signUpSpy: signUpSpy)
        
+        let name = sut.nameTextField?.text
+        let email = sut.emailTextField?.text
+        let password = sut.passwordTextField?.text
+        let confirmationPassword = sut.confirmationPasswordTextField?.text
+        
         sut.saveButton?.simulateTap()
-        XCTAssertEqual(callsCount, 1)
+        XCTAssertEqual(signUpViewModel, SignUpViewModel(name: name, email: email, password: password, passwordConfirmation: confirmationPassword))
     }
 }
 
