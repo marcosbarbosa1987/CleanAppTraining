@@ -18,6 +18,7 @@
 		CDB08590263E5972008106A1 /* TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13C826291D5E00FD7290 /* TestExtension.swift */; };
 		CDB08597263E5B85008106A1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB08596263E5B85008106A1 /* LoadingView.swift */; };
 		CDBDC8172662F8CD007A76DF /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8162662F8CD007A76DF /* TestExtensions.swift */; };
+		CDBDC8322663062A007A76DF /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8312663062A007A76DF /* UIViewControllerExtensions.swift */; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
 		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
@@ -206,6 +207,7 @@
 		CD54BAB4262D017B000F1B43 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		CDB08596263E5B85008106A1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CDBDC8162662F8CD007A76DF /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		CDBDC8312663062A007A76DF /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -413,6 +415,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		CDBDC83026630615007A76DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDC8312663062A007A76DF /* UIViewControllerExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CDD095292640EF67009DC7E0 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +477,7 @@
 		CDD095892640F3A8009DC7E0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CDBDC83026630615007A76DF /* Helpers */,
 				CDD0958B2640F3A8009DC7E0 /* Info.plist */,
 				CDBDC8002662F87F007A76DF /* Scenes */,
 			);
@@ -1092,6 +1103,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBDC8322663062A007A76DF /* UIViewControllerExtensions.swift in Sources */,
 				CDD095DF2640F753009DC7E0 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
