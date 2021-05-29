@@ -17,6 +17,7 @@
 		CDB0858A263E52E6008106A1 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13D926291F9D00FD7290 /* AccountModelFactory.swift */; };
 		CDB08590263E5972008106A1 /* TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13C826291D5E00FD7290 /* TestExtension.swift */; };
 		CDB08597263E5B85008106A1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB08596263E5B85008106A1 /* LoadingView.swift */; };
+		CDBDC8172662F8CD007A76DF /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8162662F8CD007A76DF /* TestExtensions.swift */; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
 		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
@@ -204,6 +205,7 @@
 		CD54BAA1262D0092000F1B43 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		CD54BAB4262D017B000F1B43 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		CDB08596263E5B85008106A1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CDBDC8162662F8CD007A76DF /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -403,6 +405,14 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		CDBDC8152662F8BE007A76DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDC8162662F8CD007A76DF /* TestExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CDD095292640EF67009DC7E0 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +467,7 @@
 		CDD095892640F3A8009DC7E0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CDD0958B2640F3A8009DC7E0 /* Info.plist */,
 				CDBDC8002662F87F007A76DF /* Scenes */,
 			);
 			path = UI;
@@ -465,6 +476,7 @@
 		CDD095942640F3A8009DC7E0 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				CDBDC8152662F8BE007A76DF /* Helpers */,
 				CDBDC80E2662F89A007A76DF /* Scenes */,
 				CDD095972640F3A8009DC7E0 /* Info.plist */,
 			);
@@ -483,7 +495,6 @@
 				CDFAB0EC2630ED10007F1D39 /* Presentation */,
 				CDFAB0F72630ED10007F1D39 /* PresentationTests */,
 				CDD095892640F3A8009DC7E0 /* UI */,
-				CDD0958B2640F3A8009DC7E0 /* Info.plist */,
 				CDD095942640F3A8009DC7E0 /* UITests */,
 				CDD933DD26213ED1000AD8C0 /* Products */,
 				CDD9342126214659000AD8C0 /* Frameworks */,
@@ -1090,6 +1101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD095962640F3A8009DC7E0 /* SignUpViewControllerTests.swift in Sources */,
+				CDBDC8172662F8CD007A76DF /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
