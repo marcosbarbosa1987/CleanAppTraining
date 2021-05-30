@@ -20,6 +20,10 @@
 		CDBDC8172662F8CD007A76DF /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8162662F8CD007A76DF /* TestExtensions.swift */; };
 		CDBDC8322663062A007A76DF /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8312663062A007A76DF /* UIViewControllerExtensions.swift */; };
 		CDBDC84026630708007A76DF /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC83F26630708007A76DF /* Storyboarded.swift */; };
+		CDBDC85B266318B0007A76DF /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDC852266318B0007A76DF /* Validation.framework */; };
+		CDBDC860266318B0007A76DF /* EmailValidatorAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC85F266318B0007A76DF /* EmailValidatorAdapterTests.swift */; };
+		CDBDC88926631967007A76DF /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAB0EB2630ED10007F1D39 /* Presentation.framework */; };
+		CDBDC88A26631967007A76DF /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAB0EB2630ED10007F1D39 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
 		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
@@ -72,6 +76,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = CDD9340326214613000AD8C0;
 			remoteInfo = Data;
+		};
+		CDBDC85C266318B0007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBDC851266318B0007A76DF;
+			remoteInfo = Validation;
+		};
+		CDBDC88B26631967007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDFAB0EA2630ED10007F1D39;
+			remoteInfo = Presentation;
 		};
 		CDD095922640F3A8009DC7E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -153,6 +171,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CDBDC88D26631967007A76DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDBDC88A26631967007A76DF /* Presentation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDD095BF2640F49D009DC7E0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +239,11 @@
 		CDBDC8162662F8CD007A76DF /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		CDBDC8312663062A007A76DF /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CDBDC83F26630708007A76DF /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		CDBDC852266318B0007A76DF /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBDC855266318B0007A76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBDC85A266318B0007A76DF /* ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBDC85F266318B0007A76DF /* EmailValidatorAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapterTests.swift; sourceTree = "<group>"; };
+		CDBDC861266318B0007A76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -259,6 +293,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CDBDC84F266318B0007A76DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBDC88926631967007A76DF /* Presentation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBDC857266318B0007A76DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBDC85B266318B0007A76DF /* Validation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDD095852640F3A8009DC7E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,6 +476,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		CDBDC853266318B0007A76DF /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDC855266318B0007A76DF /* Info.plist */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		CDBDC85E266318B0007A76DF /* ValidationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDC85F266318B0007A76DF /* EmailValidatorAdapterTests.swift */,
+				CDBDC861266318B0007A76DF /* Info.plist */,
+			);
+			path = ValidationTests;
+			sourceTree = "<group>";
+		};
 		CDD095292640EF67009DC7E0 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +577,8 @@
 				CDFAB0F72630ED10007F1D39 /* PresentationTests */,
 				CDD095892640F3A8009DC7E0 /* UI */,
 				CDD095942640F3A8009DC7E0 /* UITests */,
+				CDBDC853266318B0007A76DF /* Validation */,
+				CDBDC85E266318B0007A76DF /* ValidationTests */,
 				CDD933DD26213ED1000AD8C0 /* Products */,
 				CDD9342126214659000AD8C0 /* Frameworks */,
 			);
@@ -528,6 +597,8 @@
 				CDFAB0F32630ED10007F1D39 /* PresentationTests.xctest */,
 				CDD095882640F3A8009DC7E0 /* UI.framework */,
 				CDD095902640F3A8009DC7E0 /* UITests.xctest */,
+				CDBDC852266318B0007A76DF /* Validation.framework */,
+				CDBDC85A266318B0007A76DF /* ValidationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -719,6 +790,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		CDBDC84D266318B0007A76DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDD095832640F3A8009DC7E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -757,6 +835,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CDBDC851266318B0007A76DF /* Validation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBDC863266318B0007A76DF /* Build configuration list for PBXNativeTarget "Validation" */;
+			buildPhases = (
+				CDBDC84D266318B0007A76DF /* Headers */,
+				CDBDC84E266318B0007A76DF /* Sources */,
+				CDBDC84F266318B0007A76DF /* Frameworks */,
+				CDBDC850266318B0007A76DF /* Resources */,
+				CDBDC88D26631967007A76DF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBDC88C26631967007A76DF /* PBXTargetDependency */,
+			);
+			name = Validation;
+			productName = Validation;
+			productReference = CDBDC852266318B0007A76DF /* Validation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDBDC859266318B0007A76DF /* ValidationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBDC866266318B0007A76DF /* Build configuration list for PBXNativeTarget "ValidationTests" */;
+			buildPhases = (
+				CDBDC856266318B0007A76DF /* Sources */,
+				CDBDC857266318B0007A76DF /* Frameworks */,
+				CDBDC858266318B0007A76DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBDC85D266318B0007A76DF /* PBXTargetDependency */,
+			);
+			name = ValidationTests;
+			productName = ValidationTests;
+			productReference = CDBDC85A266318B0007A76DF /* ValidationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CDD095872640F3A8009DC7E0 /* UI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDD095992640F3A8009DC7E0 /* Build configuration list for PBXNativeTarget "UI" */;
@@ -960,6 +1076,12 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					CDBDC851266318B0007A76DF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					CDBDC859266318B0007A76DF = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					CDD095872640F3A8009DC7E0 = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
@@ -1023,11 +1145,27 @@
 				CDFAB0F22630ED10007F1D39 /* PresentationTests */,
 				CDD095872640F3A8009DC7E0 /* UI */,
 				CDD0958F2640F3A8009DC7E0 /* UITests */,
+				CDBDC851266318B0007A76DF /* Validation */,
+				CDBDC859266318B0007A76DF /* ValidationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CDBDC850266318B0007A76DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBDC858266318B0007A76DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDD095862640F3A8009DC7E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1102,6 +1240,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CDBDC84E266318B0007A76DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBDC856266318B0007A76DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBDC860266318B0007A76DF /* EmailValidatorAdapterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDD095842640F3A8009DC7E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1219,6 +1372,16 @@
 			target = CDD9340326214613000AD8C0 /* Data */;
 			targetProxy = CDB08583263E4FDB008106A1 /* PBXContainerItemProxy */;
 		};
+		CDBDC85D266318B0007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBDC851266318B0007A76DF /* Validation */;
+			targetProxy = CDBDC85C266318B0007A76DF /* PBXContainerItemProxy */;
+		};
+		CDBDC88C26631967007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDFAB0EA2630ED10007F1D39 /* Presentation */;
+			targetProxy = CDBDC88B26631967007A76DF /* PBXContainerItemProxy */;
+		};
 		CDD095932640F3A8009DC7E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CDD095872640F3A8009DC7E0 /* UI */;
@@ -1277,6 +1440,102 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CDBDC864266318B0007A76DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Validation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.Validation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CDBDC865266318B0007A76DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Validation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.Validation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CDBDC867266318B0007A76DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				INFOPLIST_FILE = ValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.ValidationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CDBDC868266318B0007A76DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L682628XMT;
+				INFOPLIST_FILE = ValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.ValidationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		CDD0959A2640F3A8009DC7E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1300,7 +1559,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1329,7 +1588,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1351,7 +1610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1373,7 +1632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1905,6 +2164,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CDBDC863266318B0007A76DF /* Build configuration list for PBXNativeTarget "Validation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBDC864266318B0007A76DF /* Debug */,
+				CDBDC865266318B0007A76DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBDC866266318B0007A76DF /* Build configuration list for PBXNativeTarget "ValidationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBDC867266318B0007A76DF /* Debug */,
+				CDBDC868266318B0007A76DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CDD095992640F3A8009DC7E0 /* Build configuration list for PBXNativeTarget "UI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
