@@ -30,6 +30,19 @@
 		CDBDC8B526631D85007A76DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBDC8B426631D85007A76DF /* Assets.xcassets */; };
 		CDBDC8B826631D85007A76DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBDC8B626631D85007A76DF /* LaunchScreen.storyboard */; };
 		CDBDC8CE26631D85007A76DF /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8CD26631D85007A76DF /* MainUITests.swift */; };
+		CDBDC90126631E46007A76DF /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
+		CDBDC90226631E46007A76DF /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBDC90526631E46007A76DF /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; };
+		CDBDC90626631E46007A76DF /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBDC90926631E46007A76DF /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDED13E226292A2B00FD7290 /* Infra.framework */; };
+		CDBDC90A26631E46007A76DF /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDED13E226292A2B00FD7290 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBDC90D26631E46007A76DF /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAB0EB2630ED10007F1D39 /* Presentation.framework */; };
+		CDBDC90E26631E46007A76DF /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAB0EB2630ED10007F1D39 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBDC91126631E46007A76DF /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD095882640F3A8009DC7E0 /* UI.framework */; };
+		CDBDC91226631E46007A76DF /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD095882640F3A8009DC7E0 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBDC91526631E46007A76DF /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDC852266318B0007A76DF /* Validation.framework */; };
+		CDBDC91626631E46007A76DF /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDC852266318B0007A76DF /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBDC92526631E9A007A76DF /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC92426631E9A007A76DF /* SignUpFactory.swift */; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
 		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
@@ -110,6 +123,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = CDBDC8A826631D81007A76DF;
 			remoteInfo = Main;
+		};
+		CDBDC90326631E46007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD9340326214613000AD8C0;
+			remoteInfo = Data;
+		};
+		CDBDC90726631E46007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD933EE26214437000AD8C0;
+			remoteInfo = Domain;
+		};
+		CDBDC90B26631E46007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDED13E126292A2B00FD7290;
+			remoteInfo = Infra;
+		};
+		CDBDC90F26631E46007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDFAB0EA2630ED10007F1D39;
+			remoteInfo = Presentation;
+		};
+		CDBDC91326631E46007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDD095872640F3A8009DC7E0;
+			remoteInfo = UI;
+		};
+		CDBDC91726631E46007A76DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBDC851266318B0007A76DF;
+			remoteInfo = Validation;
 		};
 		CDD095922640F3A8009DC7E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -202,6 +257,22 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDBDC91926631E46007A76DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDBDC90626631E46007A76DF /* Domain.framework in Embed Frameworks */,
+				CDBDC91226631E46007A76DF /* UI.framework in Embed Frameworks */,
+				CDBDC90226631E46007A76DF /* Data.framework in Embed Frameworks */,
+				CDBDC91626631E46007A76DF /* Validation.framework in Embed Frameworks */,
+				CDBDC90E26631E46007A76DF /* Presentation.framework in Embed Frameworks */,
+				CDBDC90A26631E46007A76DF /* Infra.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDD095BF2640F49D009DC7E0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +347,7 @@
 		CDBDC8C926631D85007A76DF /* MainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBDC8CD26631D85007A76DF /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		CDBDC8CF26631D85007A76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBDC92426631E9A007A76DF /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
 		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -345,6 +417,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBDC90526631E46007A76DF /* Domain.framework in Frameworks */,
+				CDBDC91126631E46007A76DF /* UI.framework in Frameworks */,
+				CDBDC90126631E46007A76DF /* Data.framework in Frameworks */,
+				CDBDC91526631E46007A76DF /* Validation.framework in Frameworks */,
+				CDBDC90D26631E46007A76DF /* Presentation.framework in Frameworks */,
+				CDBDC90926631E46007A76DF /* Infra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +628,7 @@
 		CDBDC8AA26631D81007A76DF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CDBDC92326631E8F007A76DF /* Factories */,
 				CDBDC8AB26631D81007A76DF /* AppDelegate.swift */,
 				CDBDC8AD26631D81007A76DF /* SceneDelegate.swift */,
 				CDBDC8B426631D85007A76DF /* Assets.xcassets */,
@@ -574,6 +653,14 @@
 				CDBDC8CF26631D85007A76DF /* Info.plist */,
 			);
 			path = MainUITests;
+			sourceTree = "<group>";
+		};
+		CDBDC92326631E8F007A76DF /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDC92426631E9A007A76DF /* SignUpFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		CDD095292640EF67009DC7E0 /* SignUp */ = {
@@ -969,10 +1056,17 @@
 				CDBDC8A526631D81007A76DF /* Sources */,
 				CDBDC8A626631D81007A76DF /* Frameworks */,
 				CDBDC8A726631D81007A76DF /* Resources */,
+				CDBDC91926631E46007A76DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDBDC90426631E46007A76DF /* PBXTargetDependency */,
+				CDBDC90826631E46007A76DF /* PBXTargetDependency */,
+				CDBDC90C26631E46007A76DF /* PBXTargetDependency */,
+				CDBDC91026631E46007A76DF /* PBXTargetDependency */,
+				CDBDC91426631E46007A76DF /* PBXTargetDependency */,
+				CDBDC91826631E46007A76DF /* PBXTargetDependency */,
 			);
 			name = Main;
 			productName = Main;
@@ -1441,6 +1535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBDC8AC26631D81007A76DF /* AppDelegate.swift in Sources */,
+				CDBDC92526631E9A007A76DF /* SignUpFactory.swift in Sources */,
 				CDBDC8AE26631D81007A76DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1596,6 +1691,36 @@
 			isa = PBXTargetDependency;
 			target = CDBDC8A826631D81007A76DF /* Main */;
 			targetProxy = CDBDC8CA26631D85007A76DF /* PBXContainerItemProxy */;
+		};
+		CDBDC90426631E46007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDD9340326214613000AD8C0 /* Data */;
+			targetProxy = CDBDC90326631E46007A76DF /* PBXContainerItemProxy */;
+		};
+		CDBDC90826631E46007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDD933EE26214437000AD8C0 /* Domain */;
+			targetProxy = CDBDC90726631E46007A76DF /* PBXContainerItemProxy */;
+		};
+		CDBDC90C26631E46007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDED13E126292A2B00FD7290 /* Infra */;
+			targetProxy = CDBDC90B26631E46007A76DF /* PBXContainerItemProxy */;
+		};
+		CDBDC91026631E46007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDFAB0EA2630ED10007F1D39 /* Presentation */;
+			targetProxy = CDBDC90F26631E46007A76DF /* PBXContainerItemProxy */;
+		};
+		CDBDC91426631E46007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDD095872640F3A8009DC7E0 /* UI */;
+			targetProxy = CDBDC91326631E46007A76DF /* PBXContainerItemProxy */;
+		};
+		CDBDC91826631E46007A76DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBDC851266318B0007A76DF /* Validation */;
+			targetProxy = CDBDC91726631E46007A76DF /* PBXContainerItemProxy */;
 		};
 		CDD095932640F3A8009DC7E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1775,7 +1900,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L682628XMT;
 				INFOPLIST_FILE = Main/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1795,7 +1920,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L682628XMT;
 				INFOPLIST_FILE = Main/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
