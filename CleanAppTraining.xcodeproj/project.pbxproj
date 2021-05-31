@@ -47,6 +47,7 @@
 		CDBDC961266487DC007A76DF /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095632640F159009DC7E0 /* AddAccountSpy.swift */; };
 		CDBDC98726648865007A76DF /* TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13C826291D5E00FD7290 /* TestExtension.swift */; };
 		CDBDC9A4266488C1007A76DF /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8CD26631D85007A76DF /* SignUpIntegrationTests.swift */; };
+		CDBDC9CA26648B36007A76DF /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC9C926648B36007A76DF /* WeakVarProxy.swift */; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
 		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
@@ -345,6 +346,7 @@
 		CDBDC92426631E9A007A76DF /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		CDBDC94A2664853F007A76DF /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		CDBDC956266485D2007A76DF /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
+		CDBDC9C926648B36007A76DF /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 		CDBDC8AA26631D81007A76DF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CDBDC9C826648B26007A76DF /* Proxies */,
 				CDBDC955266485C1007A76DF /* Composers */,
 				CDBDC92326631E8F007A76DF /* Factories */,
 				CDBDC8AB26631D81007A76DF /* AppDelegate.swift */,
@@ -653,6 +656,14 @@
 				CDBDC956266485D2007A76DF /* SignUpComposer.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		CDBDC9C826648B26007A76DF /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDC9C926648B36007A76DF /* WeakVarProxy.swift */,
+			);
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 		CDD095292640EF67009DC7E0 /* SignUp */ = {
@@ -1498,6 +1509,7 @@
 				CDBDC8AC26631D81007A76DF /* AppDelegate.swift in Sources */,
 				CDBDC92526631E9A007A76DF /* ControllerFactory.swift in Sources */,
 				CDBDC8AE26631D81007A76DF /* SceneDelegate.swift in Sources */,
+				CDBDC9CA26648B36007A76DF /* WeakVarProxy.swift in Sources */,
 				CDBDC957266485D2007A76DF /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
