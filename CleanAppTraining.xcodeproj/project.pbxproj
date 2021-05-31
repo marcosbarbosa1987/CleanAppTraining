@@ -29,7 +29,6 @@
 		CDBDC8AE26631D81007A76DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8AD26631D81007A76DF /* SceneDelegate.swift */; };
 		CDBDC8B526631D85007A76DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBDC8B426631D85007A76DF /* Assets.xcassets */; };
 		CDBDC8B826631D85007A76DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBDC8B626631D85007A76DF /* LaunchScreen.storyboard */; };
-		CDBDC8CE26631D85007A76DF /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8CD26631D85007A76DF /* MainUITests.swift */; };
 		CDBDC90126631E46007A76DF /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; };
 		CDBDC90226631E46007A76DF /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9340426214613000AD8C0 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDBDC90526631E46007A76DF /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD933EF26214437000AD8C0 /* Domain.framework */; };
@@ -45,6 +44,9 @@
 		CDBDC92526631E9A007A76DF /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC92426631E9A007A76DF /* ControllerFactory.swift */; };
 		CDBDC94B2664853F007A76DF /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC94A2664853F007A76DF /* UseCaseFactory.swift */; };
 		CDBDC957266485D2007A76DF /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC956266485D2007A76DF /* SignUpComposer.swift */; };
+		CDBDC961266487DC007A76DF /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095632640F159009DC7E0 /* AddAccountSpy.swift */; };
+		CDBDC98726648865007A76DF /* TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED13C826291D5E00FD7290 /* TestExtension.swift */; };
+		CDBDC9A4266488C1007A76DF /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC8CD26631D85007A76DF /* SignUpIntegrationTests.swift */; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
 		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
@@ -113,13 +115,6 @@
 			remoteInfo = Presentation;
 		};
 		CDBDC8BF26631D85007A76DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CDBDC8A826631D81007A76DF;
-			remoteInfo = Main;
-		};
-		CDBDC8CA26631D85007A76DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDD933D326213ED1000AD8C0 /* Project object */;
 			proxyType = 1;
@@ -346,9 +341,7 @@
 		CDBDC8B926631D85007A76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDBDC8BE26631D85007A76DF /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBDC8C426631D85007A76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDBDC8C926631D85007A76DF /* MainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDBDC8CD26631D85007A76DF /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
-		CDBDC8CF26631D85007A76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBDC8CD26631D85007A76DF /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		CDBDC92426631E9A007A76DF /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		CDBDC94A2664853F007A76DF /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		CDBDC956266485D2007A76DF /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
@@ -431,13 +424,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CDBDC8BB26631D85007A76DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDBDC8C626631D85007A76DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -646,18 +632,10 @@
 		CDBDC8C126631D85007A76DF /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDBDC8CD26631D85007A76DF /* SignUpIntegrationTests.swift */,
 				CDBDC8C426631D85007A76DF /* Info.plist */,
 			);
 			path = MainTests;
-			sourceTree = "<group>";
-		};
-		CDBDC8CC26631D85007A76DF /* MainUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CDBDC8CD26631D85007A76DF /* MainUITests.swift */,
-				CDBDC8CF26631D85007A76DF /* Info.plist */,
-			);
-			path = MainUITests;
 			sourceTree = "<group>";
 		};
 		CDBDC92326631E8F007A76DF /* Factories */ = {
@@ -765,7 +743,6 @@
 				CDBDC85E266318B0007A76DF /* ValidationTests */,
 				CDBDC8AA26631D81007A76DF /* Main */,
 				CDBDC8C126631D85007A76DF /* MainTests */,
-				CDBDC8CC26631D85007A76DF /* MainUITests */,
 				CDD933DD26213ED1000AD8C0 /* Products */,
 				CDD9342126214659000AD8C0 /* Frameworks */,
 			);
@@ -788,7 +765,6 @@
 				CDBDC85A266318B0007A76DF /* ValidationTests.xctest */,
 				CDBDC8A926631D81007A76DF /* Main.app */,
 				CDBDC8BE26631D85007A76DF /* MainTests.xctest */,
-				CDBDC8C926631D85007A76DF /* MainUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1105,24 +1081,6 @@
 			productReference = CDBDC8BE26631D85007A76DF /* MainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CDBDC8C826631D85007A76DF /* MainUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CDBDC8D626631D85007A76DF /* Build configuration list for PBXNativeTarget "MainUITests" */;
-			buildPhases = (
-				CDBDC8C526631D85007A76DF /* Sources */,
-				CDBDC8C626631D85007A76DF /* Frameworks */,
-				CDBDC8C726631D85007A76DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CDBDC8CB26631D85007A76DF /* PBXTargetDependency */,
-			);
-			name = MainUITests;
-			productName = MainUITests;
-			productReference = CDBDC8C926631D85007A76DF /* MainUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		CDD095872640F3A8009DC7E0 /* UI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDD095992640F3A8009DC7E0 /* Build configuration list for PBXNativeTarget "UI" */;
@@ -1340,10 +1298,6 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = CDBDC8A826631D81007A76DF;
 					};
-					CDBDC8C826631D85007A76DF = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = CDBDC8A826631D81007A76DF;
-					};
 					CDD095872640F3A8009DC7E0 = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
@@ -1411,7 +1365,6 @@
 				CDBDC859266318B0007A76DF /* ValidationTests */,
 				CDBDC8A826631D81007A76DF /* Main */,
 				CDBDC8BD26631D85007A76DF /* MainTests */,
-				CDBDC8C826631D85007A76DF /* MainUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1441,13 +1394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CDBDC8BC26631D85007A76DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDBDC8C726631D85007A76DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1560,14 +1506,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDBDC8C526631D85007A76DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDBDC8CE26631D85007A76DF /* MainUITests.swift in Sources */,
+				CDBDC961266487DC007A76DF /* AddAccountSpy.swift in Sources */,
+				CDBDC98726648865007A76DF /* TestExtension.swift in Sources */,
+				CDBDC9A4266488C1007A76DF /* SignUpIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1702,11 +1643,6 @@
 			isa = PBXTargetDependency;
 			target = CDBDC8A826631D81007A76DF /* Main */;
 			targetProxy = CDBDC8BF26631D85007A76DF /* PBXContainerItemProxy */;
-		};
-		CDBDC8CB26631D85007A76DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CDBDC8A826631D81007A76DF /* Main */;
-			targetProxy = CDBDC8CA26631D85007A76DF /* PBXContainerItemProxy */;
 		};
 		CDBDC90426631E46007A76DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1989,46 +1925,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Main.app/Main";
-			};
-			name = Release;
-		};
-		CDBDC8D726631D85007A76DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L682628XMT;
-				INFOPLIST_FILE = MainUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.MainUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Main;
-			};
-			name = Debug;
-		};
-		CDBDC8D826631D85007A76DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L682628XMT;
-				INFOPLIST_FILE = MainUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.marcosbarbosa.MainUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Main;
 			};
 			name = Release;
 		};
@@ -2692,15 +2588,6 @@
 			buildConfigurations = (
 				CDBDC8D426631D85007A76DF /* Debug */,
 				CDBDC8D526631D85007A76DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDBDC8D626631D85007A76DF /* Build configuration list for PBXNativeTarget "MainUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CDBDC8D726631D85007A76DF /* Debug */,
-				CDBDC8D826631D85007A76DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
