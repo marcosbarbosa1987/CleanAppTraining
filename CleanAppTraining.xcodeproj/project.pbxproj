@@ -42,7 +42,9 @@
 		CDBDC91226631E46007A76DF /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDD095882640F3A8009DC7E0 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDBDC91526631E46007A76DF /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDC852266318B0007A76DF /* Validation.framework */; };
 		CDBDC91626631E46007A76DF /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDC852266318B0007A76DF /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDBDC92526631E9A007A76DF /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC92426631E9A007A76DF /* SignUpFactory.swift */; };
+		CDBDC92526631E9A007A76DF /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC92426631E9A007A76DF /* ControllerFactory.swift */; };
+		CDBDC94B2664853F007A76DF /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC94A2664853F007A76DF /* UseCaseFactory.swift */; };
+		CDBDC957266485D2007A76DF /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDC956266485D2007A76DF /* SignUpComposer.swift */; };
 		CDD095302640EF82009DC7E0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */; };
 		CDD095372640EFC4009DC7E0 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */; };
 		CDD0954A2640F0E7009DC7E0 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */; };
@@ -347,7 +349,9 @@
 		CDBDC8C926631D85007A76DF /* MainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBDC8CD26631D85007A76DF /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		CDBDC8CF26631D85007A76DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDBDC92426631E9A007A76DF /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
+		CDBDC92426631E9A007A76DF /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		CDBDC94A2664853F007A76DF /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		CDBDC956266485D2007A76DF /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		CDD0952F2640EF82009DC7E0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CDD095362640EFC4009DC7E0 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		CDD095492640F0E7009DC7E0 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -628,6 +632,7 @@
 		CDBDC8AA26631D81007A76DF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CDBDC955266485C1007A76DF /* Composers */,
 				CDBDC92326631E8F007A76DF /* Factories */,
 				CDBDC8AB26631D81007A76DF /* AppDelegate.swift */,
 				CDBDC8AD26631D81007A76DF /* SceneDelegate.swift */,
@@ -658,9 +663,18 @@
 		CDBDC92326631E8F007A76DF /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				CDBDC92426631E9A007A76DF /* SignUpFactory.swift */,
+				CDBDC92426631E9A007A76DF /* ControllerFactory.swift */,
+				CDBDC94A2664853F007A76DF /* UseCaseFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		CDBDC955266485C1007A76DF /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDC956266485D2007A76DF /* SignUpComposer.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 		CDD095292640EF67009DC7E0 /* SignUp */ = {
@@ -1534,9 +1548,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBDC94B2664853F007A76DF /* UseCaseFactory.swift in Sources */,
 				CDBDC8AC26631D81007A76DF /* AppDelegate.swift in Sources */,
-				CDBDC92526631E9A007A76DF /* SignUpFactory.swift in Sources */,
+				CDBDC92526631E9A007A76DF /* ControllerFactory.swift in Sources */,
 				CDBDC8AE26631D81007A76DF /* SceneDelegate.swift in Sources */,
+				CDBDC957266485D2007A76DF /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
